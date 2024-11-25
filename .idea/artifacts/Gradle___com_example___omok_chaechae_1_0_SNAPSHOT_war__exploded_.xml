@@ -1,0 +1,46 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" external-system-id="GRADLE" name="Gradle : com.example : omok_chaechae-1.0-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/build/libs/exploded/omok_chaechae-1.0-SNAPSHOT.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <buildTaskPath>:war_exploded</buildTaskPath>
+        <cleanTaskPath>:cleanWar_exploded</cleanTaskPath>
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/libs/exploded/omok_chaechae-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="omok_chaechae.main/web/Web Gradle : omok_chaechae-1.0-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="omok_chaechae.main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: javax.servlet:javax.servlet-api:4.0.1" />
+          <element id="library" level="project" name="Gradle: org.projectlombok:lombok:1.18.30" />
+          <element id="library" level="project" name="Gradle: com.oracle.database.jdbc:ojdbc11:21.7.0.0" />
+          <element id="library" level="project" name="Gradle: com.oracle.database.jdbc:ojdbc8:19.3.0.0" />
+          <element id="library" level="project" name="Gradle: javax.websocket:javax.websocket-api:1.1" />
+          <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-websocket:9.0.75" />
+          <element id="library" level="project" name="Gradle: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Gradle: com.mysql:mysql-connector-j:8.0.33" />
+          <element id="library" level="project" name="Gradle: com.oracle.database.jdbc:ucp:19.3.0.0" />
+          <element id="library" level="project" name="Gradle: com.oracle.database.security:oraclepki:19.3.0.0" />
+          <element id="library" level="project" name="Gradle: com.oracle.database.security:osdt_cert:19.3.0.0" />
+          <element id="library" level="project" name="Gradle: com.oracle.database.security:osdt_core:19.3.0.0" />
+          <element id="library" level="project" name="Gradle: com.oracle.database.ha:simplefan:19.3.0.0" />
+          <element id="library" level="project" name="Gradle: com.oracle.database.ha:ons:19.3.0.0" />
+          <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-servlet-api:9.0.75" />
+          <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-websocket-api:9.0.75" />
+          <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-util:9.0.75" />
+          <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-juli:9.0.75" />
+          <element id="library" level="project" name="Gradle: com.google.protobuf:protobuf-java:3.21.9" />
+          <element id="library" level="project" name="Gradle: org.json:json:20240303" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
