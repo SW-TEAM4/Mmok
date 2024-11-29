@@ -1,0 +1,245 @@
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  height: 100vh; /* 전체 화면 높이에 맞게 */
+  background-color: black;
+}
+
+
+.user-info-left {
+  position: absolute;
+  left: 0;
+  top: 250px;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+}
+
+.user-info-right {
+  position: absolute;
+  right: 0;
+  top: 250px;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+}
+
+
+.room-info {
+	  position: absolute;
+	  top: 100px;
+	  left: 80px;
+	  text-align: center;
+	  font-size: 24px;
+	  color: white;
+	  background-color: black;
+	  padding: 10px;
+}
+
+
+
+.user {
+ 	  text-align: center;
+}
+
+.user-img {
+  	  width: 200px;
+      height: 200px;
+ 	  margin-bottom: 10px;
+}
+.user-name {
+  font-size: 28px; /* 이름 크기 */
+  color: white; /* 텍스트 색상 */
+  margin-bottom: 10px; /* 이름과 전적 사이 간격 */
+}
+/* 유저 전적 */
+.user-record {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px; /* 전적과 버튼 사이 간격 */
+}
+
+.ready-btn {
+  width: 180px;
+  height: 58px;
+  padding: 10px;
+  background-color: #97B43F;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px
+}
+
+.ready-btn:disabled {
+  width: 180px;
+  height: 58px;
+  padding: 10px;
+  background-color: #D2FD51;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px 
+}
+
+.ready-button:hover {
+  background-color: #76a736;
+  color: #fff;
+}
+
+
+.game-header {
+  display: flex;
+  justify-content: space-between; /* 좌우로 공간을 균등 분배 */
+  align-items: center; /* 수직 중앙 정렬 */
+  height: 50px; /* 높이를 원하는 값으로 설정 */
+  width: 450px;
+  padding: 10px; /* 좌우 여백 */
+  margin-left: 20px;
+}
+
+#timer {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  box-sizing: border-box;
+  height: 30px;
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+
+#turn-info {
+  font-size: 20px;
+  text-align: center;
+  flex-grow: 1;
+  color: white;
+  box-sizing: border-box;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px; /* 타이머와의 간격 */
+  margin-right: 10px; /* 오른쪽 여백 */
+}
+.game-board-container {
+    display: flex;
+    flex-direction: column;       /* 세로 방향으로 정렬 */
+    justify-content: flex-start;  /* 자식 요소들을 위에서부터 아래로 정렬 */
+    align-items: center;          /* 가운데 정렬 (수평) */
+    height: 450px;                /* 고정 높이 */
+    width: flex;                 /* 고정 너비 */
+    position: relative;               /* 화면 전체 높이를 사용 (필요한 경우) */
+    margin-top: 50px;
+}
+
+.board {
+  width: 450px;
+  height: 450px;	
+  display: grid;
+  grid-template-columns: repeat(15, 30px);
+  grid-template-rows: repeat(15, 30px);
+  background-color: #fff;
+  z-index: 99;
+}
+
+/* 첫 번째 셀 (왼쪽 상단) */
+.board .cell:first-child {
+  border-top-left-radius: 10px; /* 왼쪽 위 모서리 둥글게 */
+}
+
+/* 마지막 셀 (오른쪽 상단) */
+.board .cell:nth-child(15):not(:nth-last-child(-n+15)) {
+  border-top-right-radius: 10px; /* 오른쪽 위 모서리 둥글게 */
+}
+
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background-color: #D2FD51;
+  border: 2px solid #DDDDDD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: #e0e0e0;
+}
+
+.black, .white {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+/* 채팅창  */
+.chat-container {
+  margin-top: 20px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message-box {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;                  /* textarea가 부모 요소의 100% 너비를 차지하도록 설정 */
+    resize: none;                 /* 사용자가 크기를 조절하지 못하도록 설정 (선택 사항) */
+}
+
+.message-input {
+   width: calc(100% - 140px);   /* 버튼의 너비 130px + 오른쪽 여백을 고려하여 100%에서 빼줍니다 */
+   height: 40px;
+   padding: 0 10px;  /* 입력창 내 여백 조정 */
+   box-sizing: border-box;
+}
+
+.send-button {
+	width: 130px;
+	height: 40px;     
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+.send-button:hover {
+  background-color: #45a049;
+}

@@ -1,14 +1,7 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 이윤채
-  Date: 2024-11-25
-  Time: 오후 4:47
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ page import="com.example.omok_chaechae.Rangking.RangkingVO"%>
-<%@ page import="com.example.omok_chaechae.Rangking.RangkingDAO"%>
+<%@ page import="com.example.mmok.Rangking.RangkingVO"%>
+<%@ page import="com.example.mmok.Rangking.RangkingDAO"%>
 <%@ page import="java.util.List"%>
 
 <!DOCTYPE html>
